@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+#counter {
+  background-color: #000;
+  color: #fff;
+  font-size: 200px;
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+.animacja {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100vw;
+}
+
+#countlast {
+  font-size: 140px;
+  line-height: inherit;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#count1, #count2, #count3, #count4, #count5, #count6, #count7, #count8, #count9, #count10, #countlast {
+  text-align: center;
+  visibility: hidden;
+}
+
+@keyframes znikanie {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes pojawieniesie {
+  0%, 100% {
+    visibility: visible;
+  }
+}
+
+#count10 {
+  animation-duration: 1s;
+  animation-name: znikanie;
+  animation-timing-function: ease-in-out;
+}
+
+#count9 {
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-name: znikanie;
+  animation-timing-function: ease-in-out;
+}
+
+#count8 {
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-name: znikanie;
+  animation-timing-function: ease-in-out;
+}
+
+#count7 {
+  animation-delay: 3s;
+  animation-duration: 1s;
+  animation-name: znikanie;
+  animation-timing-function: ease-in-out;
+}
+
+#count6 {
+  animation-delay: 4s;  
+  animation-duration: 1s;
+  animation-name: znikanie;
+  animation-timing-function: ease-in-out;
+}
+
+#count5 {
+  animation-delay: 5s;
+  animation-duration: 1s;
+  animation-name: znikanie;
+  animation-timing-function: ease-in-out;
+}
+
+#count4 {
+  animation-delay: 6s;
+  animation-duration: 1s;
+  animation-name: znikanie;
+  animation-timing-function: ease-in-out;
+}
+
+#count3 {
+  animation-delay: 7s;
+  animation-duration: 1s;
+  animation-name: znikanie;
+  animation-timing-function: ease-in-out;
+}
+
+#count2 {
+  animation-delay: 8s;
+  animation-duration: 1s;
+  animation-name: znikanie;
+  animation-timing-function: ease-in-out;
+}
+
+#count1 {
+  animation-delay: 9s;
+  animation-duration: 1s;
+  animation-name: znikanie;
+  animation-timing-function: ease-in-out;
+}
+
+#countlast {
+  animation-delay: 10s;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: pojawieniesie;
+  animation-timing-function: ease-in-out;
+}
+
+
+
