@@ -19,16 +19,7 @@
   width: 100vw;
 }
 
-#countlast {
-  font-size: 140px;
-  line-height: inherit;
-  text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 #count1, #count2, #count3, #count4, #count5, #count6, #count7, #count8, #count9, #count10, #countlast {
-  text-align: center;
   visibility: hidden;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
@@ -36,7 +27,6 @@
 
 #count1, #count2, #count3, #count4, #count5, #count6, #count7, #count8, #count9, #count10 {
   animation-name: znikanie;
-
 }
 
 @keyframes znikanie {
@@ -94,6 +84,8 @@
   animation-delay: 10s;
   animation-iteration-count: infinite;
   animation-name: pojawieniesie;
+  font-size: 140px;
+  line-height: inherit;
 }
 
 
